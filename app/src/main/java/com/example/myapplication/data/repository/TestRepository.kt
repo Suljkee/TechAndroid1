@@ -16,7 +16,6 @@ class TestRepository {
 
     private val json = Json { ignoreUnknownKeys = true }
 
-    // Schema for Test Generation
     private val testSchema = Schema(
         name = "test_response",
         description = "Response containing a list of test questions",
@@ -79,7 +78,6 @@ class TestRepository {
         required = listOf("questions")
     )
 
-    // Schema for Evaluation
     private val evalSchema = Schema(
         name = "evaluation",
         description = "Evaluation result",

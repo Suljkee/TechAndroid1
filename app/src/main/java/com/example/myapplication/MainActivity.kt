@@ -69,7 +69,6 @@ class MainActivity : ComponentActivity() {
                                     totalCount = state.totalCount,
                                     answeredQuestions = state.answeredQuestions,
                                     onRetry = {
-                                        // Simple retry logic (resets to home)
                                         viewModel.resetToHome()
                                     },
                                     onHome = { viewModel.resetToHome() }
@@ -92,7 +91,6 @@ class MainActivity : ComponentActivity() {
                                 }
                             }
                             is TestUiState.Loading -> {
-                                // Not strictly used yet, but good to have
                             }
                         }
                     }

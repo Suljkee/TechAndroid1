@@ -34,7 +34,7 @@ sealed interface TestUiState {
 }
 
 class SharedTestViewModel(
-    private val repository: TestRepository = TestRepository() // Manual DI for simplicity
+    private val repository: TestRepository = TestRepository()
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow<TestUiState>(TestUiState.Idle)

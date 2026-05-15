@@ -34,12 +34,12 @@ data class OpenQuestionEvaluation(
     val feedback: String
 )
 
-// Data models for internal state management
+
 data class UserAnswer(
     val question: Question,
     val selectedOption: String? = null,
     val textAnswer: String? = null,
-    val matchingAnswers: Map<String, String>? = null // concept -> definition
+    val matchingAnswers: Map<String, String>? = null
 )
 
 data class EvaluationResult(

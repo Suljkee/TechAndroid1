@@ -58,7 +58,6 @@ fun TestScreen(
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
     ) {
-        // Top Bar Area
         Surface(
             modifier = Modifier.fillMaxWidth(),
             color = MaterialTheme.colorScheme.surface,
@@ -94,14 +93,12 @@ fun TestScreen(
             }
         }
 
-        // Scrollable Content
         Column(
             modifier = Modifier
                 .weight(1f)
                 .verticalScroll(scrollState)
                 .padding(20.dp)
         ) {
-            // Question Card
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -161,7 +158,6 @@ fun TestScreen(
             }
         }
 
-        // Bottom Button Area
         Surface(
             modifier = Modifier.fillMaxWidth(),
             color = MaterialTheme.colorScheme.surface,
@@ -357,7 +353,6 @@ fun MatchingQuestionContent(
                         modifier = Modifier.padding(bottom = 16.dp)
                     )
                     
-                    // Dialog Scrollable List
                     Column(
                         modifier = Modifier
                             .fillMaxWidth()
